@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Lass
+namespace Crossing
 {
     public partial class Form1 : Form
     {
@@ -91,12 +91,19 @@ namespace Lass
                 this.Invalidate();
             }
 
-            //this.Invalidate();
         }
 
         private void buttonMoveShape_Click(object sender, EventArgs e)
         {
-            
+            if (!int.TryParse(textBoxPosX.Text, out int posX) ||
+                !int.TryParse(textBoxPosY.Text, out int posY))
+            {
+                MessageBox.Show("Проверьте корректность ввода данных");
+                return;
+            }
+
+            cross.Move(posX, posY);
+            this.Invalidate();
         }
     }
 
@@ -118,13 +125,10 @@ namespace Lass
 
         protected abstract void Draw(Graphics g);
 
-        public void Move(int newX, int newY, Graphics g)
+        public void Move(int newX, int newY)
         {
-
-            if (visible) Hide(g, Form1.DefaultBackColor);
             x = newX;
             y = newY;
-            if (visible) Show(g);
         }
 
         public void Hide(Graphics g, Color backColor)

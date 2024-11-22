@@ -1,4 +1,4 @@
-﻿namespace Lass
+﻿namespace Crossing
 {
     partial class Form1
     {
@@ -35,8 +35,8 @@
             this.textBoxPointX = new System.Windows.Forms.TextBox();
             this.textBoxPointY = new System.Windows.Forms.TextBox();
             this.textBoxWidth = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxPosX = new System.Windows.Forms.TextBox();
+            this.textBoxPosY = new System.Windows.Forms.TextBox();
             this.buttonCreateFigure = new System.Windows.Forms.Button();
             this.buttonCloseFigure = new System.Windows.Forms.Button();
             this.buttonMoveShape = new System.Windows.Forms.Button();
@@ -103,19 +103,19 @@
             this.textBoxWidth.Size = new System.Drawing.Size(136, 20);
             this.textBoxWidth.TabIndex = 7;
             // 
-            // textBox4
+            // textBoxPosX
             // 
-            this.textBox4.Location = new System.Drawing.Point(622, 313);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(36, 20);
-            this.textBox4.TabIndex = 8;
+            this.textBoxPosX.Location = new System.Drawing.Point(622, 313);
+            this.textBoxPosX.Name = "textBoxPosX";
+            this.textBoxPosX.Size = new System.Drawing.Size(36, 20);
+            this.textBoxPosX.TabIndex = 8;
             // 
-            // textBox5
+            // textBoxPosY
             // 
-            this.textBox5.Location = new System.Drawing.Point(688, 313);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(36, 20);
-            this.textBox5.TabIndex = 9;
+            this.textBoxPosY.Location = new System.Drawing.Point(688, 313);
+            this.textBoxPosY.Name = "textBoxPosY";
+            this.textBoxPosY.Size = new System.Drawing.Size(36, 20);
+            this.textBoxPosY.TabIndex = 9;
             // 
             // buttonCreateFigure
             // 
@@ -198,8 +198,8 @@
             this.Controls.Add(this.buttonMoveShape);
             this.Controls.Add(this.buttonCloseFigure);
             this.Controls.Add(this.buttonCreateFigure);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxPosY);
+            this.Controls.Add(this.textBoxPosX);
             this.Controls.Add(this.textBoxWidth);
             this.Controls.Add(this.textBoxPointY);
             this.Controls.Add(this.textBoxPointX);
@@ -223,8 +223,8 @@
         private System.Windows.Forms.TextBox textBoxPointX;
         private System.Windows.Forms.TextBox textBoxPointY;
         private System.Windows.Forms.TextBox textBoxWidth;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxPosX;
+        private System.Windows.Forms.TextBox textBoxPosY;
         private System.Windows.Forms.Button buttonCreateFigure;
         private System.Windows.Forms.Button buttonCloseFigure;
         private System.Windows.Forms.Button buttonMoveShape;
